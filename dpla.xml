@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<os:OpenSearchDescription xmlns:os="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<os:ShortName>SNK</os:ShortName>
+  <os:Description>Search engine full control</os:Description>
+  <os:InputEncoding>UTF-8</os:InputEncoding>
+  <os:Image width="16" height="16" type="image/x-icon">data:image/x-icon;base64,http://www.world-connect-commodities.ro:20523/Style%20Library/icon.png</os:Image>
+  <os:Url type="text/html" method="method" template="searchURL">
+    <os:Param name="key/value pairs" value="{searchTerms}"/>
+    ...
+    <os:Param name="key/value pairs" value="{searchTerms}"/>
+  </os:Url>
+  <os:Url type="application/x-suggestions+json" template="suggestionURL"/>
+  <moz:SearchForm>http://www.world-connect-commodities.ro:8775/Search/default.aspx</moz:SearchForm>
+</os:OpenSearchDescription>
